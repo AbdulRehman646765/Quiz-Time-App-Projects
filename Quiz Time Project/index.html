@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Time Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/ideas.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="home-container">
+      <img src="img/main logo.svg" alt="Quiz Time Logo" />
+      <button class="start-btn" onclick="clickButton.play();">
+        Start Now >>>
+      </button>
+
+      <p class="made-with">
+        Made with <span class="heart">❤️</span> by
+        <span class="my-name">Chaudhary Abdul Rehman.</span>
+      </p>
+    </div>
+
+    <div class="open-quiz-container">
+      <div class="logos">
+        <a href=""><img src="img/main logo.svg" /></a>
+        <img
+          src="img/Volume Up icon.svg"
+          alt="Volume Up icon"
+          class="volume-up-icon"
+          onclick="clickButton.play()"
+        />
+        <img
+          src="img/Volume Mute icon.svg"
+          alt="Volume Mute icon"
+          class="volume-mute-icon"
+          onclick="clickButton.play()"
+        />
+      </div>
+      <div class="question-count-box">01/05</div>
+      <h2 id="question">Questions goes here</h2>
+      <div class="countdown-box">00:30</div>
+
+      <div id="answer-buttons">
+        <button class="btn option-one">Answer 1</button>
+        <button class="btn option-two">Answer 2</button>
+        <button class="btn option-three">Answer 3</button>
+        <button class="btn option-four">Answer 4</button>
+      </div>
+      <button id="next-btn">Next ></button>
+
+      <p class="made-with quiz-open-para">
+        Made with <span class="heart">❤️</span> by
+        <span class="my-name">Chaudhary Abdul Rehman.</span>
+      </p>
+    </div>
+  </body>
+</html>
